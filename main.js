@@ -7,14 +7,13 @@ import { decrypt } from "./data/buttonsFunctions/decrypt";
 import { encrypt } from "./data/buttonsFunctions/encrypt";
 import "./style.css";
 
-
 const printMain = () => {
-    Main();
-    TextInput('Text to encrypt/decrypt', 'text');
-    TextInput('Key','key');
-    Button('encrypt', encrypt);
-    Button('decrypt', decrypt);
-    Output();
+  Main();
+  TextInput("Text to encrypt/decrypt", "text", "textarea");
+  TextInput("Key", "key", "input");
+  Button("encrypt", encrypt);
+  Button("decrypt", decrypt);
+  Output();
 };
 
 Header();
